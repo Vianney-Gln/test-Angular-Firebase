@@ -1,0 +1,4 @@
+<div style="display: flex;width:100%" *ngFor="let item of jokes |async">
+  <p (click)="deleteJoke(item.id)" style="background-color: blue;cursor: pointer;">{{item.datas['joke']}}</p><button
+    (click)="goToUpdate(item.id)" type="button" style="margin-left:10px;padding:0">update</button>
+</div>

@@ -1,0 +1,10 @@
+<h1>update</h1>
+<form *ngIf="jokeFormGroup" [formGroup]="jokeFormGroup">
+  <label for="document">
+    {{documentName}}
+  </label>
+  <label for="joke">
+    <input type="text" formControlName="joke" />
+  </label>
+  <button (click)="updateJoke()" type="button">envoyer</button>
+</form>

@@ -1,0 +1,8 @@
+<h1>FORM</h1>
+<form [formGroup]="jokeFormGroup">
+
+  <label for="joke">
+    <input type="text" formControlName="joke" />
+  </label>
+  <button (click)="post()" type="button">envoyer</button>
+</form>
